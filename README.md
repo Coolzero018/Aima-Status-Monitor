@@ -1,17 +1,17 @@
 # --- Description ---
 AIMA Status Monitor is a simple automated utility and Telegram bot designed to monitor active visa processing applications, document validation updates, and appointment slots on the official Portuguese AIMA portal (portal-renovacoes.aima.gov.pt). The program checks the web portal for data updates, compares them with previous states, saves timestamps to a local history ledger, and instantly sends alert messages via a Telegram bot if any changes are detected.
 
---- Features ---
+# --- Features ---
 - Periodic scanning and parsing of current application metrics directly from target validation portals.
 - Automated tracking of state differences against cached records to prevent duplicate alerts.
 - A time-stamped history ledger file to log and track the timeline of portal status shifts.
 - A multithreaded monitoring daemon that queries changes every 2 minutes without blocking or freezing Telegram user interactions.
 - Simple interactive command controls (/start, /url setup, /check overrides, and /history export) directly inside Telegram chat.
 
---- Donations ---
+# --- Donations ---
 If you’d like to see this project continue or develop into a more advanced version, you can make a donation here: https://ko-fi.com/coolzero55894. This would mean that I haven’t wasted all those hours of work and effort.
 
---- Installation and Setup ---
+# --- Installation and Setup ---
 1. Install the dependencies:
 pip install -r requirements.txt
 
